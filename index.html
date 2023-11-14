@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Aaradhya Review Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form name="submit-to-google-sheet">
+        <!-- <h1>Hotel Aaradhya</h1> -->
+        <div class="logo">
+            <img src="name.png" alt="">
+        </div><br>
+        <h2>Enter the details below</h2>
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your Full Name" required />
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" placeholder="Enter your Phone Number"
+            required />
+        <!-- <small>Format: 1234567890</small> -->
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email Address" required />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="Enter your City" /><br /><br />
+        <h2>Ratings <span class="rate">(1:Bad/5:Excellent)</span></h2>
+
+        <div class="ratings">
+            <div>
+                <label>Front Office Staff:</label>
+                <div class="radios">
+                    <input type="radio" id="frontOffice1" name="frontOfficeStaff" value="1" required />
+                    <input type="radio" id="frontOffice2" name="frontOfficeStaff" value="2" required />
+                    <input type="radio" id="frontOffice3" name="frontOfficeStaff" value="3" required />
+                    <input type="radio" id="frontOffice4" name="frontOfficeStaff" value="4" required />
+                    <input type="radio" id="frontOffice5" name="frontOfficeStaff" value="5" required />
+                </div>
+                <div class="radio-labels">
+                    <label>1</label>
+                    <label>2</label>
+                    <label>3</label>
+                    <label>4</label>
+                    <label>5</label>
+                </div>
+            </div>
+            <div>
+                <label>Restaurant Ambiance:</label>
+                <div class="radios">
+                    <input type="radio" id="RestaurantAmbiance1" name="RestaurantAmbiance" value="1" required />
+                    <input type="radio" id="RestaurantAmbiance2" name="RestaurantAmbiance" value="2" required />
+                    <input type="radio" id="RestaurantAmbiance3" name="RestaurantAmbiance" value="3" required />
+                    <input type="radio" id="RestaurantAmbiance4" name="RestaurantAmbiance" value="4" required />
+                    <input type="radio" id="RestaurantAmbiance5" name="RestaurantAmbiance" value="5" required />
+                </div>
+                <div class="radio-labels">
+                    <label>1</label>
+                    <label>2</label>
+                    <label>3</label>
+                    <label>4</label>
+                    <label>5</label>
+                </div>
+            </div>
+            <div>
+                <label>Restaurant Food:</label>
+                <div class="radios">
+                    <input type="radio" id="RestaurantFood1" name="RestaurantFood" value="1" required />
+                    <input type="radio" id="RestaurantFood2" name="RestaurantFood" value="2" required />
+                    <input type="radio" id="RestaurantFood3" name="RestaurantFood" value="3" required />
+                    <input type="radio" id="RestaurantFood4" name="RestaurantFood" value="4" required />
+                    <input type="radio" id="RestaurantFood5" name="RestaurantFood" value="5" required />
+                </div>
+                <div class="radio-labels">
+                    <label>1</label>
+                    <label>2</label>
+                    <label>3</label>
+                    <label>4</label>
+                    <label>5</label>
+                </div>
+            </div>
+            <div>
+                <label>Restaurant Staff:</label>
+                <div class="radios">
+                    <input type="radio" id="RestaurantStaff1" name="RestaurantStaff" value="1" required />
+                    <input type="radio" id="RestaurantStaff2" name="RestaurantStaff" value="2" required />
+                    <input type="radio" id="RestaurantStaff3" name="RestaurantStaff" value="3" required />
+                    <input type="radio" id="RestaurantStaff4" name="RestaurantStaff" value="4" required />
+                    <input type="radio" id="RestaurantStaff5" name="RestaurantStaff" value="5" required />
+                </div>
+                <div class="radio-labels">
+                    <label>1</label>
+                    <label>2</label>
+                    <label>3</label>
+                    <label>4</label>
+                    <label>5</label>
+                </div>
+            </div>
+            <div>
+                <label>Travel Desk:</label>
+                <div class="radios">
+                    <input type="radio" id="TravelDesk1" name="TravelDesk" value="1" required />
+                    <input type="radio" id="TravelDesk2" name="TravelDesk" value="2" required />
+                    <input type="radio" id="TravelDesk3" name="TravelDesk" value="3" required />
+                    <input type="radio" id="TravelDesk4" name="TravelDesk" value="4" required />
+                    <input type="radio" id="TravelDesk5" name="TravelDesk" value="5" required />
+                </div>
+                <div class="radio-labels">
+                    <label>1</label>
+                    <label>2</label>
+                    <label>3</label>
+                    <label>4</label>
+                    <label>5</label>
+                </div>
+            </div>
+            <div>
+                <label>House Keeping:</label>
+                <div class="radios">
+                    <input type="radio" id="HouseKeeping1" name="HouseKeeping" value="1" required />
+                    <input type="radio" id="HouseKeeping2" name="HouseKeeping" value="2" required />
+                    <input type="radio" id="HouseKeeping3" name="HouseKeeping" value="3" required />
+                    <input type="radio" id="HouseKeeping4" name="HouseKeeping" value="4" required />
+                    <input type="radio" id="HouseKeeping5" name="HouseKeeping" value="5" required />
+                </div>
+                <div class="radio-labels">
+                    <label>1</label>
+                    <label>2</label>
+                    <label>3</label>
+                    <label>4</label>
+                    <label>5</label>
+                </div>
+            </div>
+            <div>
+                <label>Door Man:</label>
+                <div class="radios">
+                    <input type="radio" id="DoorMan1" name="DoorMan" value="1" required />
+                    <input type="radio" id="DoorMan2" name="DoorMan" value="2" required />
+                    <input type="radio" id="DoorMan3" name="DoorMan" value="3" required />
+                    <input type="radio" id="DoorMan4" name="DoorMan" value="4" required />
+                    <input type="radio" id="DoorMan5" name="DoorMan" value="5" required />
+                </div>
+                <div class="radio-labels">
+                    <label>1</label>
+                    <label>2</label>
+                    <label>3</label>
+                    <label>4</label>
+                    <label>5</label>
+                </div>
+            </div>
+            <div>
+                <label>Room Cleanliness:</label>
+                <div class="radios">
+                    <input type="radio" id="RoomCleanliness1" name="RoomCleanliness" value="1" required />
+                    <input type="radio" id="RoomCleanliness2" name="RoomCleanliness" value="2" required />
+                    <input type="radio" id="RoomCleanliness3" name="RoomCleanliness" value="3" required />
+                    <input type="radio" id="RoomCleanliness4" name="RoomCleanliness" value="4" required />
+                    <input type="radio" id="RoomCleanliness5" name="RoomCleanliness" value="5" required />
+                </div>
+                <div class="radio-labels">
+                    <label>1</label>
+                    <label>2</label>
+                    <label>3</label>
+                    <label>4</label>
+                    <label>5</label>
+                </div>
+            </div>
+            <div>
+                <label>Overall Hotel Rating:</label>
+                <div class="radios">
+                    <input type="radio" id="Overall1" name="Overall" value="1" required />
+                    <input type="radio" id="Overall2" name="Overall" value="2" required />
+                    <input type="radio" id="Overall1=3" name="Overall" value="3" required />
+                    <input type="radio" id="Overall4" name="Overall" value="4" required />
+                    <input type="radio" id="Overall5" name="Overall" value="5" required />
+                </div>
+                <div class="radio-labels">
+                    <label>1</label>
+                    <label>2</label>
+                    <label>3</label>
+                    <label>4</label>
+                    <label>5</label>
+                </div>
+            </div>
+        </div>
+        <br /><br />
+        <!-- <h2>About</h2> -->
+
+        <label for="source">How did you hear about our hotel?</label>
+        <select id="source" name="source" required>
+            <option value="NA">-- select --</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="Posters">Posters</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="source">How did you make reservation at our hotel?</label>
+        <select id="source" name="reservation-source">
+            <option value="NA">-- select --</option>
+            <option value="call">Called</option>
+            <option value="travelagency">Travel Agency</option>
+            <option value="reception">Reception</option>
+            <option value="NA">other</option>
+            <!-- <option value="banners">Banners</option> -->
+        </select>
+
+        <label for="purpose">Purpose of your visit:</label>
+        <select id="purpose" name="purpose">
+            <option value="NA">-- select --</option>
+            <option value="vacation">Vacation</option>
+            <option value="wedding">Wedding</option>
+            <option value="business">Business</option>
+            <option value="other">Other</option>
+        </select>
+        <br /><br />
+        <label for="Review">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Anything else to mention?"></textarea>
+
+        <br /><br />
+        <button type="submit">Submit Review</button>
+    </form>
+    <script>
+        const scriptURL =
+            "https://script.google.com/macros/s/AKfycbyRRxb06N79ryIMdsaJ2ZApN4-ayul8mDgxiKpe2W60oO2GkjzZo1DsXTuOmijh96YCmg/exec";
+        const form = document.forms["submit-to-google-sheet"];
+        let inputs = document.querySelectorAll("input");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                .then((response) => console.log("Success!", response))
+                .catch((error) => console.error("Error!", error.message));
+
+            alert("Review Submitted Successfully");
+
+            inputs.forEach((input) => (input.value = ""));
+        });
+
+        //   let btnClear = document.querySelector("button");
+        //   //   let inputs = document.querySelectorAll("input");
+        //   btnClear.addEventListener("click", () => {
+        //     inputs.forEach((input) => (input.value = ""));
+        //   });
+    </script>
+</body>
+
+</html>
